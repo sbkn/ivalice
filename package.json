@@ -7,7 +7,7 @@
     "start": "node server.js",
     "test": "jest",
     "test:watch": "npm test -- --watch",
-    "test:cov": "npm test -- --coverage --collectCoverageFrom=src/**/*.{js,jsx}"
+    "test:cov": "npm test -- --coverage"
   },
   "repository": {
     "type": "git",
@@ -45,5 +45,11 @@
     "style-loader": "^0.16.0",
     "webpack": "^2.0.0",
     "webpack-dev-server": "^2.4.2"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!src/index.jsx"
+    ]
   }
 }
