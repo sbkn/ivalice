@@ -1,17 +1,21 @@
 import React from "react";
-import {applyMiddleware, combineReducers, createStore, compose} from "redux";
+import {applyMiddleware, createStore, compose} from "redux";
+import {combineReducers} from "redux-immutable";
 import {Provider} from "react-redux";
+import {Map} from "immutable";
 import {reducer as buttonReducer} from "../ConnectedButton/ConnectedButton.reducer.js";
 import FirstView from "../FirstView/FirstView.react.jsx";
 
 const reducers = {
 	counter: buttonReducer
 };
-const combinedReducer = combineReducers(reducers);
-const middleware = applyMiddleware();
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-const store = createStore(combinedReducer, composeEnhancers(middleware));
+const middleware = applyMiddleware();
+
+const initialState = Map();
+const rootReducer = combineReducers(reducers);
+const store = createStore(rootReducer, initialState, composeEnhancers(middleware));
 
 const App = () => (
 	<Provider store={ store }>

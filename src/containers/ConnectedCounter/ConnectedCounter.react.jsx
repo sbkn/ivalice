@@ -16,7 +16,7 @@ export class ConnectedCounter extends Component {
 
 export const mapStateToProps = (state) => {
 	return {
-		count: state.counter.count
+		count: state.getIn(["counter", "count"])
 	}
 };
 
