@@ -1,11 +1,11 @@
 import React from "react";
 import renderer from "react-test-renderer";
-import TestComponent from "../TestComponent.react.jsx";
+import {DisplayCounter} from "../DisplayCounter.react.jsx";
 
 it("should render correctly", () => {
 
 	const tree = renderer.create(
-		<TestComponent myProp="awesome">Hello World!</TestComponent>
+		<DisplayCounter myProp="awesome">Hello World!</DisplayCounter>
 	).toJSON();
 
 	expect(tree).toMatchSnapshot();
