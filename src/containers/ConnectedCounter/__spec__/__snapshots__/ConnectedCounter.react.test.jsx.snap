@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ConnectedCounter should render correctly 1`] = `
+<div>
+  Button clicks: 
+  <div />
+</div>
+`;

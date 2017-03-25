@@ -1,4 +1,4 @@
-import {INCREMENT_COUNTER} from "./CounterButton.constants.js";
+import {INCREMENT_COUNTER} from "./ConnectedButton.constants.js";
 
 const initialState = {
 	count: 0
@@ -10,7 +10,7 @@ const reducer = (state = initialState, action) => {
 		case INCREMENT_COUNTER:
 			return {
 				...state,
-				count: state.count + action.payload | 0
+				count: state.count + action.payload | 1
 			};
 
 		default:
