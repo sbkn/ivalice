@@ -1,11 +1,11 @@
 import React from "react";
 import {applyMiddleware, combineReducers, createStore, compose} from "redux";
 import {Provider} from "react-redux";
-import reducer from "../ConnectedButton/ConnectedButton.reducer.js";
+import {reducer as buttonReducer} from "../ConnectedButton/ConnectedButton.reducer.js";
 import FirstView from "../FirstView/FirstView.react.jsx";
 
 const reducers = {
-	counter: reducer
+	counter: buttonReducer
 };
 const combinedReducer = combineReducers(reducers);
 const middleware = applyMiddleware();

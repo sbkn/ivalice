@@ -1,5 +1,5 @@
 import React from "react";
-import reducer from "../ConnectedButton.reducer.js";
+import {reducer} from "../ConnectedButton.reducer.js";
 import {INCREMENT_COUNTER} from "../ConnectedButton.constants.js";
 
 
