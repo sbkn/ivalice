@@ -1,6 +1,6 @@
 # ivalice
 
-## Testing w/ react & redux
+## Testing code w/ react, redux & immutable.js
 
 ### Scripts
 
