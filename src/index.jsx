@@ -2,6 +2,6 @@ require("../styles/application.scss");
 
 import React from "react";
 import ReactDOM from "react-dom";
-import TestComponent from "./TestComponent/TestComponent.react.jsx";
+import App from "./App.react.jsx";
 
-ReactDOM.render(<TestComponent />, document.getElementById("react-root"));
+ReactDOM.render(<App />, document.getElementById("react-root"));

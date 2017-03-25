@@ -1,8 +1,12 @@
 import React from "react";
 
-const TestComponent = () => (
-	<div>Hello World</div>
+const TestComponent = (props) => (
+	<div className="header">{props.children}</div>
 );
+
+TestComponent.defaultProps = {
+	children: "Hello World!"
+};
 
 export default TestComponent;
 
