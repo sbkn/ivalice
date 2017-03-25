@@ -8,6 +8,8 @@
 
     npm test
 
+    npm run test:watch
+
     npm run test:cov
 
 ### Testing
