@@ -8,6 +8,10 @@
 
     npm test
 
+    npm run test:cov
+
 ### Testing
 
-Uses jest and jest snapshot testing.
+Uses Jest and with snapshot testing.
+
+Uses Jest coverage.
