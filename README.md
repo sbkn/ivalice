@@ -29,6 +29,11 @@
     `npm run lint`
 
 
+* Generate eslint report (saved to eslint-report.html):
+
+    `npm run lint:report`
+
+
 ### Testing
 
 * Uses Jest with snapshot testing.
