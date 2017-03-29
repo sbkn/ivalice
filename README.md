@@ -6,27 +6,27 @@
 
 * Run dev server on localhost:3000:
 
-    npm start
+    `npm start`
 
 
 * Run tests:
 
-    npm test
+    `npm test`
 
 
 * Run tests and watch:
 
-    npm run test:watch
+    `npm run test:watch`
 
 
 * Run tests and generate code coverage:
 
-    npm run test:cov
+    `npm run test:cov`
 
 
 * Run eslint:
 
-    npm run lint
+    `npm run lint`
 
 
 ### Testing
