@@ -7,7 +7,8 @@
     "start": "node server.js",
     "test": "jest",
     "test:watch": "npm test -- --watch",
-    "test:cov": "npm test -- --coverage"
+	  "test:cov": "npm test -- --coverage",
+	  "bluekit": "bluekit --baseDir ./src --paths . --include \"./*.react.jsx\" --exclude \"./containers/App/App.react.jsx\""
   },
   "repository": {
     "type": "git",
@@ -44,6 +45,7 @@
     "node-sass": "^4.5.1",
     "react": "^15.4.2",
     "react-addons-test-utils": "^15.4.2",
+	  "react-bluekit": "^0.4.2",
     "react-dom": "^15.4.2",
     "react-redux": "^5.0.3",
     "react-test-renderer": "^15.4.2",

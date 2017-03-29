@@ -2,9 +2,10 @@ import React from "react";
 import {applyMiddleware, createStore, compose} from "redux";
 import {combineReducers} from "redux-immutable";
 import {Provider} from "react-redux";
+import BlueKit from "react-bluekit";
 import {Map} from "immutable";
 import {reducer as buttonReducer} from "../ConnectedButton/ConnectedButton.reducer.js";
-import FirstView from "../FirstView/FirstView.react.jsx";
+import componentsIndex from "../../componentsIndex";
 
 const reducers = {
 	counter: buttonReducer
@@ -19,7 +20,10 @@ const store = createStore(rootReducer, initialState, composeEnhancers(middleware
 
 const App = () => (
 	<Provider store={ store }>
-		<FirstView/>
+		<BlueKit
+			componentsIndex={componentsIndex}
+			name="Ivalice"
+		/>
 	</Provider>
 );
 
