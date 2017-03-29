@@ -1,4 +1,3 @@
-import React from "react";
 import {Map} from "immutable";
 import {reducer} from "../ConnectedButton.reducer.js";
 import {INCREMENT_COUNTER} from "../ConnectedButton.constants.js";
