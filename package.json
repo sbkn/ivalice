@@ -8,7 +8,7 @@
     "test": "jest",
     "test:watch": "npm test -- --watch",
 	  "test:cov": "npm test -- --coverage",
-	  "bluekit": "bluekit --baseDir ./src --paths . --include \"./*.react.jsx\" --exclude \"./containers/App/App.react.jsx\""
+	"bluekit": "bluekit --baseDir ./src --paths . --exclude \"./containers/App/App.react.jsx\""
   },
   "repository": {
     "type": "git",
