@@ -13,5 +13,9 @@ export class ConnectedButton extends Component {
 	}
 }
 
+ConnectedButton.propTypes = {
+	dispatch: React.PropTypes.func.isRequired
+};
+
 export default connect()(ConnectedButton);
 

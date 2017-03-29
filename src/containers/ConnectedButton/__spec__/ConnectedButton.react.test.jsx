@@ -6,8 +6,10 @@ describe("ConnectedButton", () => {
 
 	it("should render correctly", () => {
 
+		const dispatchMock = jest.fn();
+
 		const tree = renderer.create(
-			<ConnectedButton/>
+			<ConnectedButton dispatch={dispatchMock}/>
 		).toJSON();
 
 		expect(tree).toMatchSnapshot();

@@ -14,6 +14,10 @@ export class ConnectedCounter extends Component {
 	}
 }
 
+ConnectedCounter.propTypes = {
+	count: React.PropTypes.number
+};
+
 export const mapStateToProps = (state) => {
 	return {
 		count: state.getIn(["counter", "count"])
