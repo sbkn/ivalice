@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import PropTypes from "prop-types";
 import {connect} from "react-redux";
 import Counter from "../../components/Counter/Counter.react.jsx";
 
@@ -15,7 +16,7 @@ export class ConnectedCounter extends Component {
 }
 
 ConnectedCounter.propTypes = {
-	count: React.PropTypes.number
+	count: PropTypes.number
 };
 
 export const mapStateToProps = (state) => {
